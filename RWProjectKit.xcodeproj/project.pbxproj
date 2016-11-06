@@ -15,6 +15,9 @@
 		21715E0D1DCF70B000084C3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21715E0B1DCF70B000084C3D /* LaunchScreen.storyboard */; };
 		21715E181DCF70B100084C3D /* RWProjectKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21715E171DCF70B100084C3D /* RWProjectKitTests.m */; };
 		21715E231DCF70B100084C3D /* RWProjectKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21715E221DCF70B100084C3D /* RWProjectKitUITests.m */; };
+		21715E331DCF83F400084C3D /* NSUserDefaults+RWCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 21715E321DCF83F400084C3D /* NSUserDefaults+RWCache.m */; };
+		21715E361DCF84B100084C3D /* UIView+RWFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 21715E351DCF84B100084C3D /* UIView+RWFrame.m */; };
+		21715E391DCF855E00084C3D /* UIColor+RWCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 21715E381DCF855E00084C3D /* UIColor+RWCommon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		21715E1E1DCF70B100084C3D /* RWProjectKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RWProjectKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21715E221DCF70B100084C3D /* RWProjectKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWProjectKitUITests.m; sourceTree = "<group>"; };
 		21715E241DCF70B100084C3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21715E311DCF83F400084C3D /* NSUserDefaults+RWCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+RWCache.h"; sourceTree = "<group>"; };
+		21715E321DCF83F400084C3D /* NSUserDefaults+RWCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+RWCache.m"; sourceTree = "<group>"; };
+		21715E341DCF84B100084C3D /* UIView+RWFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RWFrame.h"; sourceTree = "<group>"; };
+		21715E351DCF84B100084C3D /* UIView+RWFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RWFrame.m"; sourceTree = "<group>"; };
+		21715E371DCF855E00084C3D /* UIColor+RWCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RWCommon.h"; sourceTree = "<group>"; };
+		21715E381DCF855E00084C3D /* UIColor+RWCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RWCommon.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		21715DFC1DCF70B000084C3D /* RWProjectKit */ = {
 			isa = PBXGroup;
 			children = (
+				21715E301DCF83F400084C3D /* Categories */,
 				21715E001DCF70B000084C3D /* AppDelegate.h */,
 				21715E011DCF70B000084C3D /* AppDelegate.m */,
 				21715E031DCF70B000084C3D /* ViewController.h */,
@@ -138,6 +148,19 @@
 				21715E241DCF70B100084C3D /* Info.plist */,
 			);
 			path = RWProjectKitUITests;
+			sourceTree = "<group>";
+		};
+		21715E301DCF83F400084C3D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				21715E311DCF83F400084C3D /* NSUserDefaults+RWCache.h */,
+				21715E321DCF83F400084C3D /* NSUserDefaults+RWCache.m */,
+				21715E341DCF84B100084C3D /* UIView+RWFrame.h */,
+				21715E351DCF84B100084C3D /* UIView+RWFrame.m */,
+				21715E371DCF855E00084C3D /* UIColor+RWCommon.h */,
+				21715E381DCF855E00084C3D /* UIColor+RWCommon.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,8 +297,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				21715E051DCF70B000084C3D /* ViewController.m in Sources */,
+				21715E391DCF855E00084C3D /* UIColor+RWCommon.m in Sources */,
 				21715E021DCF70B000084C3D /* AppDelegate.m in Sources */,
 				21715DFF1DCF70B000084C3D /* main.m in Sources */,
+				21715E361DCF84B100084C3D /* UIView+RWFrame.m in Sources */,
+				21715E331DCF83F400084C3D /* NSUserDefaults+RWCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +533,7 @@
 				21715E291DCF70B100084C3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21715E2A1DCF70B100084C3D /* Build configuration list for PBXNativeTarget "RWProjectKitTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +542,7 @@
 				21715E2C1DCF70B100084C3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21715E2D1DCF70B100084C3D /* Build configuration list for PBXNativeTarget "RWProjectKitUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +551,7 @@
 				21715E2F1DCF70B100084C3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
